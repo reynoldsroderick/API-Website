@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	 <style>
+        img{ width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;}
+    </style>
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing </title>
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+ 
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="styleshetsample.css" rel="stylesheet" type="text/css">
+	<link href="EXstylesheet.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="first_line_color">
+        <div class="row">   
+                <!-- <div class="form-inline">   -->
+                <label for="fileField">File:</label>
+                <div class="col-md-6">    
+
+                        <div class="first_line" >
+                            <div class="div1"><h1>Latitude</h1> </div>
+                        </div>    
+                </div>  
+<div class="col-md-2">     
+                    <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            plot
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="Max Temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="Wind Speed.html">Wind-speed</a>
+                        </div>
+                        </div>
+                </div>  
+
+                <div class="col-md-2">  
+                    <form>
+                       <input class="MyButton1" type="button" value="Comparison" onclick="window.location.href='comparison.html'" />       
+                    </form>
+                </div> 
+
+                <div class="col-md-2">
+                      <form>
+                            <input class="MyButton2" type="button" value="data" onclick="window.location.href='weather_data_df.html'" />       
+                      </form>
+    <!-- <button type="button" href="data.html"> <a class="dropdown-item" href="https://www.youtube.com">Data</a> </button> --> 
+                </div>
+        </div>
+<!-- </div> -->
+     </div>
+<br>
+
+
+<div class="Col_container">
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+      
+      
+      <div class="col-md-8">
+        <!-- <div class="box skyblue"> -->
+
+          <main class="container1">
+            <header>
+                <h1>Summary: Latitude vs. X</h1>
+            </header>
+                <section id="introduction">
+                    <figure id="main_figure">
+                      <!-- <figcaption>Max_Temp_Lat</figcaption> -->
+<!--                      <img  id="main_fig" src="Max_Temp_Lat.png" alt=" Max_Temp_Lat " style="width:300px;height:300px;float:left">--></figure>
+                <p> &nbsp &nbsp &nbsp &nbsp The Purpose of this project was to analyze how weather changes as you get closer to the equator.
+
+			To accomplish this analysis, we first pull data from the OpenWeatherMap API to assemble a dataset on over 500
+
+			cities.</p>
+
+            <p>&nbsp &nbsp &nbsp &nbsp After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. lattitude.
+
+			Factors we looked at temperature, cloudiness, wind speed, and humidity. This site provides the source data
+
+			and visualizations created as part of the analysis, as well as explanations and descriptionsof any trend and correlations witnessed.</p>
+            
+               <p>&nbsp &nbsp &nbsp &nbsp Here we presented the results in a web visualization dashboard corresponding data for today corresponding data for today.
+            </p>
+        </section>
+      </main> 
+
+      </div>
+      <!-- </div> -->
+      
+      
+      <div class="col-md-4">
+          
+                <main class="container2">
+                    <header>
+                        <h2>Visualizations</h2>
+                    </header>
+                <!--Normally these medium columns go full wide on small screen sizes-->
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-md-6">
+                      <figure id="main1_figure">
+                          <!-- <figcaption> Max_Temp_Lat </figcaption> -->
+                        <a href="./Temperature.html"></a>
+					    <img src="Max Temp Lat.png" alt=""/> </figure>
+            
+                  </div>
+                  <div class="col-xs-3 col-sm-3 col-md-6">
+                      <figure id="main1_figure">
+                          <!-- <figcaption>Max_temp/figcaption> -->
+                          <a href="./cloudiness.html"></a>
+					    <img src="Cloudiness Lat.png" alt=""/> </figure>
+                  </div>
+                <!-- </div> -->
+
+                <!-- <div class="row"> -->
+                    <div class="col-xs-3 col-sm-3 col-md-6">
+                        <figure id="main1_figure">
+                            <!-- <figcaption>Max_temp/figcaption> -->
+                            <a href="./Humidity.html"></a>  
+					    <img src="Humidity Lat.png" alt=""/> </figure>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-6">
+                        <figure id="main1_figure">
+                            <!-- <figcaption>Max_Temp/figcaption> -->
+                            <a href="./wind-speed.html"></a>  
+					    <img src="Wind Speed Lat.png" alt=""/> </figure>
+                    </div>
+                  </div>
+                  </main>
+           
+            
+      </div>
+    </div>
+
+        
+        
+        <blockquote>
+          <p><br>
+          </p>
+        </blockquote>
+<p>&nbsp;</p>
+<div class="row">
+   <div class="col-lg-3"><></div>
+   <div class="col-lg-3"></div>
+   <div class="col-lg-3"></div>
+   <div class="col-lg-3"></div>
+ </div>
+ <p>
+ <p><!-- <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name"> -->
+	
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </p>
+
+</body>
+
+</html>
