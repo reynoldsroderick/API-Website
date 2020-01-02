@@ -18,6 +18,7 @@ Results:
 
 Temperature (F) vs. Latitude
 temp
+https://github.com/reynoldsroderick/API-Website/blob/master/Max%20Temp%20Lat.png
 
 Humidity (%) vs. Latitude
 humidity
