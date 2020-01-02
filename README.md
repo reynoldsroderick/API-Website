@@ -17,7 +17,7 @@ Results:
 
 
 Temperature (F) vs. Latitude
-temp
+tem
 
 Humidity (%) vs. Latitude
 humidity
